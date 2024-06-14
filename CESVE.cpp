@@ -76,15 +76,8 @@ void viewData()
     }
 
     char line[2048];
-//    fgets(line, sizeof(line), fl); // Skip the header
     while (fgets(line, sizeof(line), fl) != NULL)
     {
-//        long long int nim;
-//        char nama[50];
-//        int thnMasuk;
-//        float IPK;
-//        sscanf(line, "%lld, %49[^,], %d, %f", &nim, nama, &thnMasuk, &IPK);
-//        printf("%lld\t%s\t%d\t\t%.2f\n", nim, nama, thnMasuk, IPK);
         printf("%s", line);
     }
 
@@ -157,7 +150,6 @@ void ChData()
         printf("Mahasiswa dengan NIM %lld tidak ditemukan.\n", nim);
     }
 }
-
 
 void delData()
 {
